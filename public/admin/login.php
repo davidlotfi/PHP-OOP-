@@ -1,7 +1,8 @@
 <?php
- require_once("../../includes/config.php");
+
+  require_once("../../includes/config.php");
   require_once("../../includes/initialize.php");
-  
+  $message = "";
   if ($session->is_logged_in()) {
        redirect_to("index.php");
   } 
@@ -20,7 +21,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
     redirect_to("index.php");
   } else {
     // username/password combo was not found in the database
-    $message = "Username/password combination incorrect.";
+    $message = "Username/password incorrect !";
   }
   
 } else { // Form has not been submitted.
@@ -46,8 +47,8 @@ if (isset($_POST['submit'])) { // Form has been submitted.
       <h1>Photo Gallery</h1>
     </div>
     <div id="main">
-		<h2>Staff Login</h2>
-		<?php echo output_message($message); ?>
+		<h2>Login</h2>
+		<?php echo "<p class=\"message\">".$message."</p>"; ?>
 
 		<form action="login.php" method="post">
 		  <table>

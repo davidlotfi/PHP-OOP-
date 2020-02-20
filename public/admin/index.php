@@ -18,6 +18,12 @@
   <div id="main">
 
       <h2>Menu</h2>
+
+      <ul>
+         <li><a href="upload_photo.php">Upload photo</a></li>
+         <li><a href="logout.php">LougOut</a></li>
+
+      </ul>
 		
 	</div>
   <div id="footer">Copyright <?php echo date("Y", time());?>, Boukernine Abdellatif</div>
