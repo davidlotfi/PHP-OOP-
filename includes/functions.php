@@ -1,6 +1,6 @@
 <?php 
 
-    
+    // this functions !!?? 
     function strip_zeros_from_date($marked_string=""){
 
          $no_zeros= str_replace("*0","",$marked_string);

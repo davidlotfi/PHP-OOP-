@@ -1,5 +1,5 @@
 <?php
- 
+
 
  require_once("config.php");
 
@@ -7,7 +7,7 @@
 
        private $connection;
        public $last_query;
-   
+
        function __construct(){
            $this->open_connection();
        }
@@ -17,7 +17,7 @@
          if(!$this->connection){
              die("Database connection faile". mysql_error());
          }else {
-            // 2. Select a database to use 
+            // 2. Select a database to use
              $db_select = mysql_select_db(DB_NAME, $this->connection);
              if (!$db_select) {
 	              die("Database selection failed: " . mysql_error());
@@ -32,7 +32,7 @@
            }
        }
        public function query($sql){
-        $this->last_query=$sql;   
+        $this->last_query=$sql;
         $result = mysql_query($sql, $this->connection);
         $this->confirm_query($result);
         return $result;
@@ -74,9 +74,9 @@
            return mysql_insert_id($this->connection);
        }
 
-  } 
- 
+  }
+
  $database = new MySQLDatabase();
  $db =& $database;
- 
+
 ?>
