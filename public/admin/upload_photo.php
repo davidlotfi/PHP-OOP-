@@ -1,10 +1,10 @@
 <?php
-
-//  require_once("../../includes/config.php");
-//  require_once("../../includes/bd_pdo.php");
-  //require_once("../../includes/initialize.php");
-//  require_once("../../includes/session.php");
-  //if (!$session->is_logged_in()) {redirect_to("login.php");}
+  require_once("../../includes/config.php");
+  require_once("../../includes/bd_pdo.php");
+  require_once("upload_photo_post.php");
+  require_once("../../includes/initialize.php");
+  require_once("../../includes/session.php");
+  if (!$session->is_logged_in()) {redirect_to("login.php");}
 
 ?>
 
@@ -26,10 +26,11 @@
   </style>
   <div id="header"><h1>Photo Gallery</h1></div>
   <div id="main">
+    <a href="index.php"><< Back</a>
       <h2>Photo Upload</h2>
        <p class="message"><?php if (!empty($message)) {echo $message;}?></p>
 
-      <form action="upload_photo_post.php" method="POST" enctype="multipart/form-data">
+      <form action="upload_photo.php" method="POST" enctype="multipart/form-data">
          <input type="file" name="image"  onchange="document.getElementById('1').src =window.URL.createObjectURL(this.files[0])" /><br><br>
          <label for="caption">Caption : </label><input type="text" name="caption" id="" required>
          <input type="submit" name="submit" value="submit"/><br>
