@@ -2,7 +2,7 @@
   require_once("../../includes/functions.php");
   require_once("../../includes/session.php");
   if (!$session->is_logged_in()) {redirect_to("login.php");}
-      
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,11 +20,12 @@
       <h2>Menu</h2>
 
       <ul>
+         <li><a href="list_photo.php">List of photographs</a></li>
          <li><a href="upload_photo.php">Upload photo</a></li>
          <li><a href="logout.php">LougOut</a></li>
 
       </ul>
-		
+
 	</div>
   <div id="footer">Copyright <?php echo date("Y", time());?>, Boukernine Abdellatif</div>
 </body>

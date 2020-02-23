@@ -1,11 +1,8 @@
 <?php
-  require_once("../../includes/config.php");
   require_once("../../includes/bd_pdo.php");
-  require_once("upload_photo_post.php");
-  require_once("../../includes/initialize.php");
   require_once("../../includes/session.php");
-  if (!$session->is_logged_in()) {redirect_to("login.php");}
-
+  require_once("upload_photo_post.php");
+  if (!$session->is_logged_in()){redirect_to("login.php");}
 ?>
 
 <!DOCTYPE html>
