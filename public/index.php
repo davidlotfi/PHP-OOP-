@@ -1,11 +1,5 @@
 <?php
-  require_once("../includes/functions.php");
-  require_once("../includes/config.php");
-  require_once("../includes/database.php");
-  require_once("../includes/user.php");
-    // User:: because the methods is static :)
-
-   
+  require_once("../includes/bd_pdo.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,23 +13,14 @@
 <body>
   <div id="header"><h1>Photo Gallery</h1></div>
   <div id="main">
+    <?php $result = find_all_photo(); ?>
+    <?php while ($donnes = $result->fetch()) { ?>
 
-     <?php
-        
-        $user = User::find_by_id(1);
-        echo $user->full_name();
-        echo "<hr />";
-      
-        $users = User::find_all();
-       foreach($users as $user) {
-        echo "User: ". $user->username ."<br />";
-        echo "Name: ". $user->full_name() ."<br /><br />";
-        }
-       
-     ?>
-
-      
-		
+       <div style="float: left; margin-left: 20px;">
+         <img src="images/<?php echo $donnes['filename']; ?>" width="300" />
+         <p style="font-size: large;"><?php echo $donnes['caption']; ?></p>
+       </div>
+     <?php } ?>
 	</div>
   <div id="footer">Copyright <?php echo date("Y", time());?>, Boukernine Abdellatif</div>
 </body>
