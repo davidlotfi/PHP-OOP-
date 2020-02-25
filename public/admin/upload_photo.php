@@ -33,7 +33,7 @@
          <input type="submit" name="submit" value="submit"/><br>
          <img src="" id="1" alt="">
       </form>
-
+    
   </div>
   <div id="footer">Copyright <?php echo date("Y", time());?>, Boukernine Abdellatif</div>
 </body>

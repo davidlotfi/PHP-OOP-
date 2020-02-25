@@ -27,15 +27,14 @@
         </tr>
         <?php while ($donnes = $result->fetch()) { ?>
           <tr>
-            <td><img src="../images/<?php echo $donnes['filename']; ?>" width="100" /></td>
+            <td><img src="../images/<?php echo $donnes['filename']; ?>" width="200" /></td>
             <td><?php echo $donnes['filename'];?></td>
             <td><?php echo $donnes['caption']; ?></td>
             <td><?php echo $donnes['size']; ?></td>
             <td><?php echo $donnes['type'] ;?></td>
           </tr>
-      <?php }; ?>
+      <?php } ?>
       </table>
-
 
     </div>
     <div id="footer">Copyright <?php echo date("Y", time());?>, Boukernine Abdellatif</div>
