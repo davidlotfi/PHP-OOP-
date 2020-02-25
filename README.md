@@ -1,9 +1,11 @@
 
 ## Photo Gallery Project
-simple project for manage and publish photographs using some principle of php object and database.
+Simple project for manage and publish photographs using some principle of php object and database.
 
 ###  public index
 ![image](https://github.com/davidlotfi/PHP-OOP-/blob/master/index_public.png)
 
-### managment admin
+### management admin
 
+![image](https://github.com/davidlotfi/PHP-OOP-/blob/master/login.png)
+![image](https://github.com/davidlotfi/PHP-OOP-/blob/master/upload.png)
