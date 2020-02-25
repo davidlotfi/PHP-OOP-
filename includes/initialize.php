@@ -6,8 +6,5 @@ require_once("session.php");
 require_once("database.php");
 require_once("bd_pdo.php");
 require_once("user.php");
-require_once("database_object.php");
-
-
 
 ?>
