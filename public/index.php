@@ -17,7 +17,7 @@
     <?php while ($donnes = $result->fetch()) { ?>
 
        <div style="float: left; margin-left: 20px;">
-         <img src="images/<?php echo $donnes['filename']; ?>" width="300" />
+         <img src="images/<?php echo $donnes['filename']; ?>" width="300" height="200" />
          <p style="font-size: large;"><?php echo $donnes['caption']; ?></p>
        </div>
      <?php } ?>
