@@ -8,6 +8,7 @@ Simple project for manage and publish photographs using some principle of php ob
 ![image](https://github.com/davidlotfi/PHP-OOP-/blob/master/index_public.png)
 
 ### management admin
+[View Demo](http://photographs.epizy.com/public/admin/login.php)
 
 ![image](https://github.com/davidlotfi/PHP-OOP-/blob/master/login.png)
 ![image](https://github.com/davidlotfi/PHP-OOP-/blob/master/upload.png)
