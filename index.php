@@ -22,6 +22,6 @@
        </div>
      <?php } ?>
 	</div>
-  <div id="footer">Copyright <?php echo date("Y", time());?>, Boukernine Abdellatif</div>
+  <div id="footer">Copyright <?php echo date("Y", time());?>, <a href="https://boukernineabdellatif.netlify.com" target="_blank">Boukernine Abdellatif</a> </div>
 </body>
 </html>
