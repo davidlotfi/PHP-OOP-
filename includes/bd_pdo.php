@@ -13,6 +13,9 @@
       global $bdd;
       return $bdd->query('SELECT * FROM photographs');
     }
-
+    function count_all_photo(){
+      $reponse = find_all_photo();
+      return $reponse->rowCount(); ;
+    }
 
 ?>
