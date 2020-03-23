@@ -17,5 +17,9 @@
       $reponse = find_all_photo();
       return $reponse->rowCount(); ;
     }
+    function find_by_sql($sql=""){
+      global $bdd;
+      return $bdd->query($sql);
+    }
 
 ?>
