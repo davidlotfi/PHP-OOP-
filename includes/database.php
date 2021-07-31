@@ -1,6 +1,5 @@
 <?php
 
-
  require_once("config.php");
 
  class MySQLDatabase {
@@ -73,7 +72,6 @@
           // get the last id inserted over the current db connection
            return mysql_insert_id($this->connection);
        }
-
   }
 
  $database = new MySQLDatabase();
