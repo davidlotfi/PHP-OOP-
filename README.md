@@ -1,6 +1,7 @@
 
 ## Photo Gallery Project
 Simple project for manage and publish photographs using a some principle of php object and database function.
+object oriented programming
 
 [View Demo](http://photographs.epizy.com)
 
